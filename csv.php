@@ -1,18 +1,15 @@
 
-<body>
-<div id="container">
-<div id="form">
 
 <?php
 
 $host='localhost';
-    $uname='root';
-    $pwd='heavenhell';
-    $db="csv";
+    $uname='yourusername'; //username
+    $pwd='yourpassword'; //password
+    $db="csv"; //db name
 
     $con = mysql_connect($host,$uname,$pwd) or die("connection failed");
     mysql_select_db($db,$con) or die("db selection failed");
-$name= 'discounts.csv';
+$name= 'discounts.csv'; // filename
 $deleterecords = "TRUNCATE TABLE discount"; //empty the table of its current records
 mysql_query($deleterecords);
 
