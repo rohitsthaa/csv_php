@@ -35,8 +35,4 @@ mysql_query($deleterecords);
 
 ?>
 
-<?php
 
-
-
-?>
